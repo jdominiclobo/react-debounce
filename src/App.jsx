@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <SearchInput searchValue={searchValue} setSearchValue={setSearchValue} />
-      <List searchTerm={searchValue} />
+      <List searchTerm={debouncedSearchValue} />
     </>
   );
 }
